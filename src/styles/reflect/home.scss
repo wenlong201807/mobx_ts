@@ -1,0 +1,59 @@
+@import '../CommonVar.scss';
+@import '../CommonMixin.scss';
+// @import '/commonVar.scss';
+
+.home-container {
+  // background: pink;
+  //滚动条整体部分，可以设置宽度等
+  //  &::-webkit-scrollbar-button  ; // 滚动条两端的按钮
+  //  &::-webkit-scrollbar-track   ; // 外层轨道
+  //  &::-webkit-scrollbar-track-piece   ; // 内层滚动槽
+  //  &::-webkit-scrollbar-thumb  ; // 滚动的滑块
+  //  &::-webkit-scrollbar-corner  ; // 边角
+  //  &::-webkit-resizer  ; // 定义右下角拖动块的样式
+
+  .okrTitle {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 1000;
+    height: $FixedH;
+    width: 100%;
+    line-height: $FixedH;
+    @include fixedTitleFonts;
+  }
+
+  .home {
+    display: flex;
+    padding-top: $FixedH;
+    height: calc(100vh);
+    width: 100vw;
+    // background: yellowgreen;
+
+    .side {
+      min-width: 200px;
+      max-width: 200px;
+      border-right: 1px solid #ccc;
+      overflow-y: scroll;
+      // background: yellow;
+
+      &::-webkit-scrollbar {
+        height: 1px;
+        width: 1px;
+        background-color: red;
+      }
+    }
+
+    .content {
+      width: calc(100vw - 200px);
+      min-width: 860px;
+      overflow-y: scroll;
+
+      &::-webkit-scrollbar {
+        height: 1px;
+        width: 1px;
+        background-color: $ThemeBC;
+      }
+    }
+  }
+}
