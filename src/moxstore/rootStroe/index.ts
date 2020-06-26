@@ -4,6 +4,7 @@
 import testStore from '../testStore';
 import okrStore from '../okrStore';
 import devStore from '../devStore';
+import myOKRStore from '../myOKRStore';
 // import indexStore from './indexStore';
 // import newBuiltStore from './newBuiltStore';
 // import detailStore from './detailStore';
@@ -11,9 +12,10 @@ import devStore from '../devStore';
 import {createContext} from "react";
 
 const RootStoreContext = createContext({
-  testStore,
-  okrStore,
-  devStore,
+    testStore,
+    okrStore,
+    devStore,
+    myOKRStore,
     // detailStore,
     // newBuiltStore,
     // calendarStore,

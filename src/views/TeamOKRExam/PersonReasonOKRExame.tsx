@@ -26,7 +26,7 @@ function PersonReasonOKRExame() {
   };
 
   const jumpToPanoramicView = () => {
-    history.push('/home/PanoramicView');
+    history.push('/home/viewPanoramicView');
   };
   const jumpToPersonYearKRDetail = () => {
     history.push('/PersonYearKRDetail');

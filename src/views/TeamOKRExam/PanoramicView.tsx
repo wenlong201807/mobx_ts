@@ -17,13 +17,8 @@ const currentYear = moment().format(dateFormat);
 
 function PanoramicView() {
     const history = useHistory();
-    const [val, setVal] = useState('');
     const [dataYear, setDataYear] = useState(currentYear);
-    const dddd = (e) => {
-        console.log(e.target.value, val);
-        setVal(e.target.value);
-    };
-    console.log(dddd);
+
 
     const onChange = (pageNumber) => {
         console.log('Page: ', pageNumber);

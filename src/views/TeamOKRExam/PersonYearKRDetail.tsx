@@ -50,11 +50,11 @@ function PersonYearKRDetail() {
         setIsExpandKRAll(!isExpandAll);
     };
     const backToPersonKR = () => {
-        history.push('/home/TestEnvTeamOKR');
+        history.push('/home/mineTestEnvTeamOKR');
     };
     const jumpToMyOKR = (key) => {
         console.log('key:', key);
-        history.push('/home/MyOKR');
+        history.push('/home/mineMyOKR');
     };
     return (
         <div className="PersonYearKRDetailWrap">
