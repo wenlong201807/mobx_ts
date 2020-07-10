@@ -1,7 +1,7 @@
 .MyOKRWrap {
   background-color: rgba(245, 247, 249, 1);
   box-sizing: border-box;
-  height: calc(100vh);
+  // height: calc(100vh);
 
   // 季度KR详情内容部分
   .detailContentWrap {
@@ -126,7 +126,8 @@
       font-size: 14px;
       color: #333333;
       cursor: pointer;
-      &:hover{
+
+      &:hover {
         color: #F59A23;
       }
 
@@ -165,7 +166,7 @@
       cursor: pointer;
 
       &:hover {
-        color:  #F59A23;
+        color: #F59A23;
       }
     }
   }
